@@ -1,0 +1,40 @@
+# Copyright (C) 2015
+# This file is distributed under the same license as the  package.
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tag/woocommerce-super-simple-tax-exmeption\n"
+"POT-Creation-Date: 2015-09-29 11:06+0200\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2015-09-29 14:46+0200\n"
+"Language-Team: \n"
+"X-Generator: Poedit 1.8.5\n"
+"Last-Translator: \n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: de_DE\n"
+
+#: simple-tax-exemption.php:24
+msgid "Tax Exemption"
+msgstr "Steuerbefreiung"
+
+#: simple-tax-exemption.php:41
+msgid "Tax Exempt"
+msgstr "Ich bin steuerbefreit"
+
+#: simple-tax-exemption.php:48 simple-tax-exemption.php:79
+msgid "Tax Exempt ID"
+msgstr "Steuernummer"
+
+#: simple-tax-exemption.php:48 simple-tax-exemption.php:105
+msgid "The first two letters of your Tax Exempt ID should contain the country code of your billing country."
+msgstr "Die ersten zwei Stellen Ihrer Steuernummer stimmen nicht mit dem von Ihnen eingegebenen Rechnungsland überein. <br/><small>(Eine österreichische Steuernummer müsste beispielsweise mit AT beginnen.)</small>"
+
+#: simple-tax-exemption.php:48 simple-tax-exemption.php:106
+msgid "The Tax Exemption ID you entered is not valid."
+msgstr "Die von Ihnen eingegebene Steuernummer ist nicht gültig."
+
+#: simple-tax-exemption.php:48 simple-tax-exemption.php:107
+msgid "(If you are sure that your Tax Exemption ID is valid, and think this is an error, please contact us.)"
+msgstr "(Wir kontrollieren Ihre Steuernummer online. Wenn Sie sicher sind, dass die von Ihnen eingegebene Steuernummer stimmt und sie glauben, dass es sich um einen Fehler handelt, bitte kontaktieren Sie uns.)"

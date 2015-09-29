@@ -1,5 +1,5 @@
 === Woocommerce Super Simple Tax Exemption ===
-Contributors: (poldira)
+Contributors: (seangreen, poldira)
 Donate link: http://mkt.com/bobbie-wilson/woocommerce-super-simple-tax-exemption-donate
 Tags: woocommerce, no tax, tax exempt, tax exempt ID, tax-exempt, checkout
 Requires at least: 3.5
@@ -28,6 +28,9 @@ This could be many things. What stumped me at first, was that all the fields nee
 
 
 == Changelog ==
+= 1.1 = // Sean
+* Added online VAT check (Javascript Based) with http://vatid.eu/check/
+* Added Localization + German Language Files
 
 = 1.0 =
 * First version. Woot!
