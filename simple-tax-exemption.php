@@ -21,7 +21,7 @@ if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', g
    * Localisation
    */
    
-  load_plugin_textdomain( 'woocommerce-super-simple-tax-exemption', false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );   
+  load_plugin_textdomain( 'woocommerce-super-simple-tax-exemption', false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
   
   
   /*Tax Exempt Checkout for Woocommerce */
@@ -54,8 +54,9 @@ if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', g
           global $woocommerce;
   
           $woocommerce->customer->set_is_vat_exempt(FALSE);
-  
-          parse_str($post_data);
+	
+		  parse_str($post_data, $post_data);
+		  extract($post_data);
   
           if ( isset($tax_exempt_checkbox) && isset($tax_exempt_id) && $tax_exempt_checkbox == '1' && !empty($tax_exempt_id)) {
             $woocommerce->customer->set_is_vat_exempt(true);
@@ -74,8 +75,8 @@ if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', g
    * Display field value on the order edition page
    **/
   add_action( 'woocommerce_admin_order_data_after_billing_address', 'tax_exempt_field_display_admin_order_meta', 10, 1 );
-   
-  function tax_exempt_field_display_admin_order_meta($order){
+  
+  function tax_exempt_field_display_admin_order_meta($order) {
       echo '<p><strong>'.__('Tax Exempt ID','woocommerce-super-simple-tax-exemption').':</strong> ' . get_post_meta( $order->id, 'Tax Exempt ID', true ) . '</p>';
   }
   
@@ -110,5 +111,5 @@ if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', g
   add_action('init', 'woocommerce_tax_exempt_script', 100);
   
 }
-  
+
 ?>
